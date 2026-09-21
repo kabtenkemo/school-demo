@@ -1,0 +1,7 @@
+mapping collection
+auto mapper (custom config)
+map VS project to
+
+
+task:
+finsh 6 controllers & auto mapper
