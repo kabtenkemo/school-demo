@@ -15,6 +15,14 @@ namespace SCHOOL_MANAGEMENT_API.Mapping
                 .ForMember(des => des.FirstName, opt => opt.MapFrom(src => src.FullName.Split(' ')[0]))
                 .ForMember(des => des.LastName , opt => opt.MapFrom(src => src.FullName.Split(' ')[1]));
 
+            CreateMap<DTO.CreateStudentDTO, Student>()
+                .ForMember(des => des.FirstName, opt => opt.MapFrom(src => src.FullName.Split(' ')[0]))
+                .ForMember(des => des.LastName, opt => opt.MapFrom(src => src.FullName.Split(' ')[1]));
+
+            CreateMap<DTO.UpdateStudentDTO, Student>()
+                .ForMember(des => des.FirstName, opt => opt.MapFrom(src => src.FullName.Split(' ')[0]))
+                .ForMember(des => des.LastName, opt => opt.MapFrom(src => src.FullName.Split(' ')[1]));
+
 
         
         }

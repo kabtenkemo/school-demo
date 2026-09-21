@@ -124,56 +124,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/CreateStudentDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/CreateStudentDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Student"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Student"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Student"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/CreateStudentDTO"
               }
             }
           }
@@ -201,6 +162,46 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Student"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStudentDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStudentDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStudentDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -290,39 +291,6 @@
   },
   "components": {
     "schemas": {
-      "ClassRoom": {
-        "required": [
-          "capacity",
-          "gradelevel",
-          "id",
-          "name"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "gradelevel": {
-            "maximum": 12,
-            "minimum": 1,
-            "type": "integer",
-            "format": "int32"
-          },
-          "capacity": {
-            "maximum": 100,
-            "minimum": 1,
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "CreateDepDTO": {
         "type": "object",
         "properties": {
@@ -337,104 +305,20 @@
         },
         "additionalProperties": false
       },
-      "Department": {
+      "CreateStudentDTO": {
         "required": [
-          "id",
-          "name"
+          "classRoomId",
+          "dateofBirth"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
-          },
-          "description": {
-            "maxLength": 500,
+          "fullName": {
             "type": "string",
             "nullable": true
-          },
-          "teachers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Teacher"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Enrollment": {
-        "required": [
-          "enrollmentDate",
-          "id"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "studentId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "subjectId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "enrollmentDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "grade": {
-            "maximum": 100,
-            "minimum": 0,
-            "type": "number",
-            "format": "double"
-          },
-          "student": {
-            "$ref": "#/components/schemas/Student"
-          },
-          "subject": {
-            "$ref": "#/components/schemas/Subject"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Student": {
-        "required": [
-          "dateofBirth",
-          "email",
-          "firstName",
-          "id",
-          "lastName"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "firstName": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "lastName": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
           },
           "email": {
-            "maxLength": 150,
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "phoneNumber": {
             "maxLength": 20,
@@ -449,120 +333,6 @@
           "classRoomId": {
             "type": "integer",
             "format": "int32"
-          },
-          "classRoom": {
-            "$ref": "#/components/schemas/ClassRoom"
-          },
-          "enrollments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Enrollment"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Subject": {
-        "required": [
-          "id",
-          "maxGrade",
-          "name"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
-          },
-          "description": {
-            "maxLength": 500,
-            "type": "string",
-            "nullable": true
-          },
-          "maxGrade": {
-            "maximum": 100,
-            "minimum": 1,
-            "type": "integer",
-            "format": "int32"
-          },
-          "teacherId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "teacher": {
-            "$ref": "#/components/schemas/Teacher"
-          },
-          "enrollments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Enrollment"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Teacher": {
-        "required": [
-          "email",
-          "firstName",
-          "id",
-          "lastName",
-          "salary"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "firstName": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "lastName": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "maxLength": 150,
-            "minLength": 1,
-            "type": "string",
-            "format": "email"
-          },
-          "phoneNumber": {
-            "maxLength": 20,
-            "type": "string",
-            "format": "tel",
-            "nullable": true
-          },
-          "salary": {
-            "maximum": 2147483647,
-            "minimum": 0,
-            "type": "number",
-            "format": "double"
-          },
-          "departmentId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "department": {
-            "$ref": "#/components/schemas/Department"
-          },
-          "subjects": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Subject"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -577,6 +347,34 @@
           "description": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStudentDTO": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "maxLength": 20,
+            "type": "string",
+            "format": "tel",
+            "nullable": true
+          },
+          "dateofBirth": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "classRoomId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

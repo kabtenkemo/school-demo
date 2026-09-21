@@ -97,29 +97,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "student",
-        "Type": "SCHOOL_MANAGEMENT_API.Models.Student",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
-    "Method": "UpdateStudent",
-    "RelativePath": "api/Student",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "student",
-        "Type": "SCHOOL_MANAGEMENT_API.Models.Student",
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.CreateStudentDTO",
         "IsRequired": true
       }
     ],
@@ -152,6 +131,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Student/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.UpdateStudentDTO",
         "IsRequired": true
       }
     ],

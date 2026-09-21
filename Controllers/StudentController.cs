@@ -78,46 +78,52 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateStudent(Student student)
+        public ActionResult CreateStudent([FromBody] DTO.CreateStudentDTO dto)
         {
-            if (student == null || !ModelState.IsValid)
+            if (dto == null || !ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
-            var classrooms = _db.ClassRooms.Any(s => s.Id == student.ClassRoomId);
-            if (classrooms == false)
+
+            var classroomExists = _db.ClassRooms.Any(c => c.Id == dto.ClassRoomId);
+            if (!classroomExists)
             {
-                return BadRequest("no classroom like that");
+                return BadRequest("No classroom like that");
             }
+
+            var student = _mapper.Map<Student>(dto);
             _db.Students.Add(student);
             _db.SaveChanges();
+
+            var resultDto = _mapper.Map<DTO.StudentDTO>(student);
             return Created();
         }
 
-        [HttpPut]
-        public ActionResult UpdateStudent(int id, [FromBody] Student student)
+        [HttpPut("{id:int}")]
+        public ActionResult UpdateStudent(int id, [FromBody] DTO.UpdateStudentDTO dto)
         {
-            if (id != student.Id)
+            if (dto == null || !ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
 
-            var s = _db.Students.FirstOrDefault(s => s.Id == student.Id);
-            if (s == null)
+            var student = _db.Students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
             {
                 return NotFound();
             }
-            else
+
+            // map dto into existing entity
+            _mapper.Map(dto, student);
+
+            var classroomExists = _db.ClassRooms.Any(c => c.Id == dto.ClassRoomId);
+            if (!classroomExists)
             {
-                s.PhoneNumber = student.PhoneNumber;
-                s.LastName = student.LastName;
-                s.FirstName = student.FirstName;
-                s.ClassRoomId = student.ClassRoomId;
-                s.DateofBirth = student.DateofBirth;
-                s.Email = student.Email;
-                _db.SaveChanges();
+                return BadRequest("No classroom like that");
             }
-            return Ok();
+
+            _db.SaveChanges();
+            return NoContent();
         }
 
         [HttpDelete("{id:int}")]

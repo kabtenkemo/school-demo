@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\mapping\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:mapping\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\mapping\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:mapping\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,30 +93,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StudentProfile.cs",
               "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Mapping\\StudentProfile.cs",
               "RelativeDocumentMoniker": "Mapping\\StudentProfile.cs",
               "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Mapping\\StudentProfile.cs",
               "RelativeToolTip": "Mapping\\StudentProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T07:27:31.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StudentController.cs",
               "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCYAAAAZAAAAAAAAAA==",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\StudentController.cs*",
+              "RelativeToolTip": "Controllers\\StudentController.cs*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAArwHQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T18:28:18.003Z",
               "EditorCaption": ""
@@ -129,7 +129,7 @@
               "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
               "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-20T10:12:38.077Z",
               "EditorCaption": ""
@@ -307,7 +307,7 @@
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAIBJwFUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAIBZwFUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T17:32:49.507Z",
               "EditorCaption": ""
