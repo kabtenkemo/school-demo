@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\dto\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:dto\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__Ahmed_Eid/School/True/SqlTable/dbo.Departments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\dto\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:dto\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\migrations\\20260916182624_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:migrations\\20260916182624_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|d:\\school management api\\school management api\\migrations\\20260916183452_data_seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EFF60B-D854-E1C8-0E87-804EE9B67490}|SCHOOL MANAGEMENT API.csproj|solutionrelative:migrations\\20260916183452_data_seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "Controllers\\TeacherController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T12:13:14.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.Departments.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__Ahmed_Eid/School/True/SqlTable/dbo.Departments.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__Ahmed_Eid/School/True/SqlTable/dbo.Departments.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-09-20T12:09:43.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeacherDto.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\DTO\\TeacherDto.cs",
+              "RelativeDocumentMoniker": "DTO\\TeacherDto.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\DTO\\TeacherDto.cs",
+              "RelativeToolTip": "DTO\\TeacherDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T11:48:24.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T10:12:38.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepartmentDTO.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\DTO\\DepartmentDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\DepartmentDTO.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\DTO\\DepartmentDTO.cs",
+              "RelativeToolTip": "DTO\\DepartmentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T10:07:41.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:28:18.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:55:11.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "Models\\Teacher.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Teacher.cs",
+              "RelativeToolTip": "Models\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:44:29.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentDTO.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\DTO\\StudentDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\StudentDTO.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\DTO\\StudentDTO.cs",
+              "RelativeToolTip": "DTO\\StudentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T10:06:11.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClassRoom.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\ClassRoom.cs",
+              "RelativeDocumentMoniker": "Models\\ClassRoom.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\ClassRoom.cs",
+              "RelativeToolTip": "Models\\ClassRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:50:54.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:41:42.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "Models\\Enrollment.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Enrollment.cs",
+              "RelativeToolTip": "Models\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:58:23.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Subject.cs",
+              "RelativeDocumentMoniker": "Models\\Subject.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Models\\Subject.cs",
+              "RelativeToolTip": "Models\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:48:38.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAFUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T17:32:49.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBIAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T19:23:34.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-16T18:20:57.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260916182624_init.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Migrations\\20260916182624_init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260916182624_init.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Migrations\\20260916182624_init.cs",
+              "RelativeToolTip": "Migrations\\20260916182624_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:26:24.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20260916183452_data_seeding.cs",
+              "DocumentMoniker": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Migrations\\20260916183452_data_seeding.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260916183452_data_seeding.cs",
+              "ToolTip": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\Migrations\\20260916183452_data_seeding.cs",
+              "RelativeToolTip": "Migrations\\20260916183452_data_seeding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:34:52.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
