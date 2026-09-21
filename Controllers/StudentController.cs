@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using AutoMapper.Configuration.Annotations;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SCHOOL_MANAGEMENT_API.Data;
+using SCHOOL_MANAGEMENT_API.DTO;
+using SCHOOL_MANAGEMENT_API.Mapping;
 using SCHOOL_MANAGEMENT_API.Models;
 
 namespace SCHOOL_MANAGEMENT_API.Controllers
@@ -11,10 +15,16 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
     public class StudentController : ControllerBase
     {
         private readonly AppDbContext _db;
-
+        private readonly IMapper _mapper;
         public StudentController(AppDbContext db)
         {
             _db = db;
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<StudentProfile>();
+            });
+
+            _mapper = config.CreateMapper();
         }
 
         [HttpGet]
@@ -25,7 +35,8 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             {
                 return NotFound("No students found.");
             }
-            return Ok(students);
+            var dto=_mapper.Map<List<StudentDTO>>(students);
+            return Ok(dto);
         }
 
         [HttpGet("{id:int}")]
