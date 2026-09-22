@@ -10,11 +10,11 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-        private readonly AppDbContext Context;
+        private readonly AppDbContext _db;
 
         public DepartmentController(AppDbContext context)
         {
-            Context = context;
+            _db = context;
 
 
         }
@@ -22,7 +22,7 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
         [HttpGet]
         public IActionResult GetAllDepartment()
         {
-            var departments = Context.Departments.ToList();
+            var departments = _db.Departments.ToList();
             if (departments == null || departments.Count == 0)
             {
                 return NotFound("Empty");
@@ -57,15 +57,15 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
                 Description = department.Description
             };
 
-            Context.Departments.Add(d);
-            Context.SaveChanges();
+            _db.Departments.Add(d);
+            _db.SaveChanges();
             return Created();
         }
 
         [HttpPut]
         public ActionResult UpdateDepartment(int id, UpdateDepDTO department)
         {
-            var existDep = Context.Departments.FirstOrDefault(x => x.Id == id);
+            var existDep = _db.Departments.FirstOrDefault(x => x.Id == id);
             if (existDep == null)
             {
                 return NotFound("department not found");
@@ -73,7 +73,7 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
 
             existDep.Name = department.Name;
             existDep.Description = department.Description;
-            Context.SaveChanges();
+            _db.SaveChanges();
 
             return Ok();
 
@@ -82,14 +82,30 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
         [HttpDelete]
         public ActionResult DeleteDep(int id)
         {
-            var existDep = Context.Departments.FirstOrDefault(x => x.Id == id);
+            var existDep = _db.Departments.FirstOrDefault(x => x.Id == id);
             if (existDep == null)
             {
                 return NotFound("department not found");
             }
-            Context.Departments.Remove(existDep);
+            _db.Departments.Remove(existDep);
             return NoContent();
 
         }
+
+        [HttpGet("{id}/has-teachers")]
+        public ActionResult HasTeachers(int id)
+        {
+            var department = _db.Departments.FirstOrDefault(d => d.Id == id);
+            if (department == null)
+            {
+                return NotFound("Department not found.");
+            }
+            bool hasTeachers = _db.Teachers.Any(t => t.DepartmentId == id);
+            return Ok(hasTeachers);
+        }
+
+        
+
+
     }
 }

@@ -35,7 +35,7 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             {
                 return NotFound("No students found.");
             }
-            var dto=_mapper.Map<List<StudentDTO>>(students);
+            var dto = _mapper.Map<List<StudentDTO>>(students);
             return Ok(dto);
         }
 
@@ -54,7 +54,7 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
         public ActionResult GetStudentByfirstname(string firstname)
         {
             var student = _db.Students
-                .Include(s=>s.ClassRoom)
+                .Include(s => s.ClassRoom)
                 .FirstOrDefault(s => s.FirstName == firstname);
             if (student == null)
             {
@@ -139,6 +139,79 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             return Ok();
         }
 
+        [HttpGet("fillter")]
+        public ActionResult FillterStudents([FromQuery] int classRoomId, [FromQuery] int minGrade)
+        {
+            var students = _db.Students.Where(s => s.ClassRoomId == classRoomId).Where(s => s.ClassRoom.Gradelevel == minGrade).ToList();
+            if (students == null || students.Count == 0)
+            {
+                return NotFound("No students found for the given classroom ID.");
+            }
+            var dto = _mapper.Map<List<StudentDTO>>(students);
+            return Ok(dto);
+        }
 
+        [HttpGet("first")]
+        public ActionResult GetFirstStudent([FromQuery] int ClassroomId)
+        {
+            var student = _db.Students.First(s => s.ClassRoomId == ClassroomId);
+            var dto = _mapper.Map<StudentDTO>(student);
+            return Ok(dto);
+        }
+
+        [HttpGet("first-or-default")]
+        public ActionResult GetFirstOrDefaultStudent([FromQuery] int ClassroomId)
+        {
+            var student = _db.Students.FirstOrDefault(s => s.ClassRoomId == ClassroomId);
+            if (student == null)
+            {
+                return NotFound("No student found for the given classroom ID.");
+            }
+            var dto = _mapper.Map<StudentDTO>(student);
+            return Ok(dto);
+        }
+
+        [HttpGet("single")]
+        public ActionResult GetSingleStudent([FromQuery] string Email)
+        {
+            var student = _db.Students.Single(s => s.Email == Email);
+            var dto = _mapper.Map<StudentDTO>(student);
+            return Ok(dto);
+        }
+
+
+        [HttpGet("single-or-default")]
+        public ActionResult GetSingleOrDefaultStudent([FromQuery] string Email)
+        {
+            var student = _db.Students.SingleOrDefault(s => s.Email == Email);
+            if (student == null)
+            {
+                return NotFound("No student found for the given Email.");
+            }
+            var dto = _mapper.Map<StudentDTO>(student);
+            return Ok(dto);
+        }
+
+        [HttpGet("at/{index}")]
+        public ActionResult GetStudentAtIndex(int index)
+        {
+            var student = _db.Students.OrderBy(s => s.Id).ElementAt(index);
+            var dto = _mapper.Map<StudentDTO>(student);
+            return Ok(dto);
+        }
+
+        [HttpGet("atOrDefault/{index}")]
+        public ActionResult GetStudentAtIndexOrDefault(int index)
+        {
+            var student = _db.Students.OrderBy(s => s.Id).ElementAtOrDefault(index);
+            if (student == null)
+            {
+                return NotFound("No student found at the given index.");
+            }
+            var dto = _mapper.Map<StudentDTO>(student);
+            return Ok(dto);
+        }
+
+        
     }
 }

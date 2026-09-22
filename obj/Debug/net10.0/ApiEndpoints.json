@@ -1,5 +1,100 @@
 [
   {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.ClassRoomController",
+    "Method": "GetAll",
+    "RelativePath": "api/ClassRoom",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.ClassRoomController",
+    "Method": "Create",
+    "RelativePath": "api/ClassRoom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.CreateClassRoomDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.ClassRoomController",
+    "Method": "Get",
+    "RelativePath": "api/ClassRoom/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.ClassRoomController",
+    "Method": "Update",
+    "RelativePath": "api/ClassRoom/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.UpdateClassRoomDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.ClassRoomController",
+    "Method": "Delete",
+    "RelativePath": "api/ClassRoom/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.ClassRoomController",
+    "Method": "GetAllStudentsWithPhones",
+    "RelativePath": "api/ClassRoom/{id}/all-have-phones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.DepartmentController",
     "Method": "GetAllDepartment",
     "RelativePath": "api/Department",
@@ -56,6 +151,133 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.DepartmentController",
+    "Method": "HasTeachers",
+    "RelativePath": "api/Department/{id}/has-teachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Enrollment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "Create",
+    "RelativePath": "api/Enrollment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.CreateEnrollmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "Get",
+    "RelativePath": "api/Enrollment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "Update",
+    "RelativePath": "api/Enrollment/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.UpdateEnrollmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "Delete",
+    "RelativePath": "api/Enrollment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "GetLastEnrollment",
+    "RelativePath": "api/Enrollment/last",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StudentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.EnrollmentController",
+    "Method": "GetLastOrDefaultEnrollment",
+    "RelativePath": "api/Enrollment/last-or-default",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StudentId",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -174,6 +396,123 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "GetStudentAtIndex",
+    "RelativePath": "api/Student/at/{index}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "GetStudentAtIndexOrDefault",
+    "RelativePath": "api/Student/atOrDefault/{index}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "FillterStudents",
+    "RelativePath": "api/Student/fillter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classRoomId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "minGrade",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "GetFirstStudent",
+    "RelativePath": "api/Student/first",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClassroomId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "GetFirstOrDefaultStudent",
+    "RelativePath": "api/Student/first-or-default",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClassroomId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "GetSingleStudent",
+    "RelativePath": "api/Student/single",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.StudentController",
+    "Method": "GetSingleOrDefaultStudent",
+    "RelativePath": "api/Student/single-or-default",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.TeacherController",
     "Method": "GetAllTeachers",
     "RelativePath": "api/Teacher",
@@ -181,6 +520,75 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.TeacherController",
+    "Method": "CreateTeacher",
+    "RelativePath": "api/Teacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.CreateTeacherDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.TeacherController",
+    "Method": "GetTeacher",
+    "RelativePath": "api/Teacher/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.TeacherController",
+    "Method": "UpdateTeacher",
+    "RelativePath": "api/Teacher/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SCHOOL_MANAGEMENT_API.DTO.UpdateTeacherDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCHOOL_MANAGEMENT_API.Controllers.TeacherController",
+    "Method": "DeleteTeacher",
+    "RelativePath": "api/Teacher/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]
