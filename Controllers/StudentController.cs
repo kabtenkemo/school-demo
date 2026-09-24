@@ -27,17 +27,17 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             _mapper = config.CreateMapper();
         }
 
-        [HttpGet]
-        public ActionResult GetStudents()
-        {
-            var students = _db.Students.ToList();
-            if (students == null || students.Count == 0)
-            {
-                return NotFound("No students found.");
-            }
-            var dto = _mapper.Map<List<StudentDTO>>(students);
-            return Ok(dto);
-        }
+        //[HttpGet]
+        //public ActionResult GetStudents()
+        //{
+        //    var students = _db.Students.ToList();
+        //    if (students == null || students.Count == 0)
+        //    {
+        //        return NotFound("No students found.");
+        //    }
+        //    var dto = _mapper.Map<List<StudentDTO>>(students);
+        //    return Ok(dto);
+        //}
 
         [HttpGet("{id:int}")]
         public ActionResult GetStudent(int id)
@@ -139,17 +139,6 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             return Ok();
         }
 
-        [HttpGet("fillter")]
-        public ActionResult FillterStudents([FromQuery] int classRoomId, [FromQuery] int minGrade)
-        {
-            var students = _db.Students.Where(s => s.ClassRoomId == classRoomId).Where(s => s.ClassRoom.Gradelevel == minGrade).ToList();
-            if (students == null || students.Count == 0)
-            {
-                return NotFound("No students found for the given classroom ID.");
-            }
-            var dto = _mapper.Map<List<StudentDTO>>(students);
-            return Ok(dto);
-        }
 
         [HttpGet("first")]
         public ActionResult GetFirstStudent([FromQuery] int ClassroomId)
@@ -160,7 +149,7 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
         }
 
         [HttpGet("first-or-default")]
-        public ActionResult GetFirstOrDefaultStudent([FromQuery] int ClassroomId)
+        public ActionResult GetFirstOrDefaultStudent([FromBody] int ClassroomId)
         {
             var student = _db.Students.FirstOrDefault(s => s.ClassRoomId == ClassroomId);
             if (student == null)
@@ -171,8 +160,8 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             return Ok(dto);
         }
 
-        [HttpGet("single")]
-        public ActionResult GetSingleStudent([FromQuery] string Email)
+        [HttpGet("single/{Email}")]
+        public ActionResult GetSingleStudent([FromBody] string Email)
         {
             var student = _db.Students.Single(s => s.Email == Email);
             var dto = _mapper.Map<StudentDTO>(student);
@@ -180,7 +169,8 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
         }
 
 
-        [HttpGet("single-or-default")]
+
+        [HttpGet("single-or-default/{Email}")]
         public ActionResult GetSingleOrDefaultStudent([FromQuery] string Email)
         {
             var student = _db.Students.SingleOrDefault(s => s.Email == Email);
@@ -200,18 +190,76 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             return Ok(dto);
         }
 
-        [HttpGet("atOrDefault/{index}")]
-        public ActionResult GetStudentAtIndexOrDefault(int index)
+        //AI
+        [HttpGet("contains-id/{id}")]
+        public ActionResult GetStudentContainsId(int id, [FromQuery] List<int> studentIds)
         {
-            var student = _db.Students.OrderBy(s => s.Id).ElementAtOrDefault(index);
-            if (student == null)
+            if (studentIds == null || studentIds.Count == 0)
             {
-                return NotFound("No student found at the given index.");
+                return BadRequest("studentIds query parameter is required (e.g. ?studentIds=1&studentIds=2).");
             }
-            var dto = _mapper.Map<StudentDTO>(student);
-            return Ok(dto);
+
+            var contains = studentIds.Contains(id);
+            return Ok(new { id, contains });
         }
 
-        
+        [HttpGet()]
+        public ActionResult getStudents([FromQuery]int id)
+        {
+            var students = _db.Students.Where(s => s.Id == id).Select(s=>new {s.Id,FullName=s.FirstName + " " + s.LastName}).ToList();
+            if (students == null || students.Count == 0)
+            {
+                return NotFound("No students found.");
+            }
+
+            return Ok(students);
+        }
+
+        [HttpGet("basic-info/{id}")]
+        public ActionResult GetStudentBasicInfo(int id)
+        {
+            var student = _db.Students
+                .Where(s => s.Id == id)
+                .Select(s => new
+                {
+                    s.Id,
+                    FullName = s.FirstName + " " + s.LastName,
+                    s.Email
+                })
+                .FirstOrDefault();
+            if (student == null)
+            {
+                return NotFound("Student not found.");
+            }
+            return Ok(student);
+        }
+
+        [HttpGet("order-by-name")]
+        public ActionResult GetStudentsOrderBy()
+        {
+            var students = _db.Students.OrderBy(s => s.LastName);
+            if(students == null || students.Count() == 0)
+            {
+                return NotFound("No students found.");
+            }
+            return Ok(students);
+        }
+
+        [HttpGet("count")]
+        public ActionResult GetStudentsClass([FromQuery] int id)
+        {
+            var count = _db.Students.Count(s => s.ClassRoomId == id);
+            return Ok(new { count });
+        }
+
+        [HttpGet("names-string")]
+        public ActionResult GetStudentsNamesString([FromQuery] int id)
+        {
+            var names = _db.Students
+                .Where(s => s.ClassRoomId == id)
+                .Select(s => s.FirstName + " " + s.LastName);
+            return Ok(new { names });
+        }
+
     }
 }

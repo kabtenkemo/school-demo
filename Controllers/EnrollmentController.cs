@@ -130,5 +130,51 @@ namespace SCHOOL_MANAGEMENT_API.Controllers
             var dto = _mapper.Map<EnrollmentDTO>(enrollment);
             return Ok(dto);
         }
+
+        [HttpGet("order-by-classroom-grade")]
+        public ActionResult GetEnrollmentsOrderedByGradeDesc()
+        { 
+            var enrollments = _db.Enrollments
+                .OrderBy(e=>e.Student.ClassRoomId)
+                .ThenByDescending(e => e.Grade)
+                .ToList();
+            if (enrollments == null || enrollments.Count == 0)
+                return NotFound("No enrollments found.");
+            var dto = _mapper.Map<List<EnrollmentDTO>>(enrollments);
+            return Ok(dto);
+        }
+
+        [HttpGet("avrage-grade")]
+        public ActionResult GetAverageGradeByClassroom([FromQuery] int classroomId)
+        {
+            var average = _db.Enrollments
+                .Where(e => e.Student.ClassRoomId == classroomId)
+                .Average(e => e.Grade);
+            if (average == null)
+                return NotFound("No enrollments found for the given classroom.");
+            return Ok(new { average });
+        }
+
+        [HttpGet("max-grade")]
+        public ActionResult GetMaxGradeByClassroom([FromQuery] int classroomId)
+        {
+            var max = _db.Enrollments
+                .Where(e => e.Student.ClassRoomId == classroomId)
+                .Max(e => e.Grade);
+            if (max == null)
+                return NotFound("No enrollments found for the given classroom.");
+            return Ok(new { max });
+        }
+
+        [HttpGet("min-grade")]
+        public ActionResult GetMinGradeByClassroom([FromQuery] int classroomId)
+        {
+            var min = _db.Enrollments
+                .Where(e => e.Student.ClassRoomId == classroomId)
+                .Min(e => e.Grade);
+            if (min == null)
+                return NotFound("No enrollments found for the given classroom.");
+            return Ok(new { min });
+        }
     }
 }

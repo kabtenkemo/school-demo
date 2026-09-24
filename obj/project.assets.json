@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "AutoMapper/12.0.1": {
@@ -3687,23 +3687,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ahmed.Eed\\.nuget\\packages\\": {},
+    "C:\\Users\\Kabten-Kemo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API.csproj",
+      "projectUniqueName": "C:\\Users\\Kabten-Kemo\\source\\repos\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API.csproj",
       "projectName": "SCHOOL MANAGEMENT API",
-      "projectPath": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API.csproj",
-      "packagesPath": "C:\\Users\\Ahmed.Eed\\.nuget\\packages\\",
-      "outputPath": "D:\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API\\obj\\",
+      "projectPath": "C:\\Users\\Kabten-Kemo\\source\\repos\\SCHOOL MANAGEMENT API\\SCHOOL MANAGEMENT API.csproj",
+      "packagesPath": "C:\\Users\\Kabten-Kemo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kabten-Kemo\\source\\repos\\SCHOOL MANAGEMENT API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ahmed.Eed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kabten-Kemo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3716,6 +3716,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -3730,10 +3731,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
@@ -3782,7 +3784,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

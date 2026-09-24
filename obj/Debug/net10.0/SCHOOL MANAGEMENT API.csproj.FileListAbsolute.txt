@@ -339,3 +339,6 @@ D:\SCHOOL MANAGEMENT API\SCHOOL MANAGEMENT API\obj\Debug\net10.0\SCHOOL MANAGEME
 D:\SCHOOL MANAGEMENT API\SCHOOL MANAGEMENT API\obj\Debug\net10.0\ref\SCHOOL MANAGEMENT API.dll
 D:\SCHOOL MANAGEMENT API\SCHOOL MANAGEMENT API\bin\Debug\net10.0\AutoMapper.dll
 D:\SCHOOL MANAGEMENT API\SCHOOL MANAGEMENT API\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Kabten-Kemo\source\repos\SCHOOL MANAGEMENT API\bin\Debug\net10.0\AutoMapper.dll
+C:\Users\Kabten-Kemo\source\repos\SCHOOL MANAGEMENT API\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Kabten-Kemo\source\repos\SCHOOL MANAGEMENT API\obj\Debug\net10.0\SCHOOL MANAGEMENT API.sourcelink.json
